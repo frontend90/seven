@@ -1,0 +1,105 @@
+@media screen and ( max-width: 1150px )
+  .header 
+    & .header-top 
+      & .header-top-wrap
+        & .menu 
+          & .burger 
+            display: flex 
+            align-items: center
+            justify-content: flex-end
+            width: 30px 
+            height: 20px
+            position: relative 
+            cursor: pointer
+            z-index: 9999
+            &.active span 
+              display: none 
+            &.active::before 
+              transform: translateY(-50%) rotate(45deg)
+              top: 50%
+            &.active::after 
+              top: 50%
+              transform: translateY(-50%) rotate(-45deg)
+            & span 
+              background: #ffffff
+              height: 3px 
+              width: 20px 
+              transition: .3s linear 
+            &::before
+              content: ''
+              position: absolute
+              width: 30px 
+              height: 3px 
+              background: #ffffff
+              top: 0
+              transition: .3s linear 
+            &::after
+              content: ''
+              position: absolute
+              width: 30px 
+              height: 3px 
+              background: #ffffff
+              bottom: 0
+              transition: .3s linear  
+          & .main-menu 
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(#121212,.7)
+            z-index: 9998
+            display: none 
+            text-align: center
+            padding-top: 200px 
+            & a 
+              display: block
+              margin: 20px 0 
+              padding: 10px 
+              &::before
+                display: none 
+              &::after
+                display: none 
+            &.show 
+              display: block 
+@media screen and ( max-width: 700px )
+  .header 
+    & .header-top 
+      & .header-top-wrap
+        flex-direction: column 
+        & .menu 
+          margin-top: 20px 
+        & .header-space 
+          width: 100%
+    & .header-news
+      height: 100%
+      & .header-news-wrap
+        flex-direction: column 
+        & .title 
+          &::before
+            content: ''
+            position: absolute
+            width: 0
+            height: 0
+            left: 50%
+            transform: translateX(-50%)
+            top: 100%
+            border-left: 5px solid transparent
+            border-top: 10px solid #e75757
+            border-right: 5px solid transparent
+        & .ticker
+          padding: 20px 
+          background: #ffffff
+          margin-left: 0
+        & .header-social
+          flex-direction: column 
+          & .header-search 
+            margin-top: 20px 
+          & .social 
+            margin-top: 20px 
+@media screen and ( max-width: 560px )
+  .header 
+    & .header-slider
+      & .slick-dots
+        padding-right: 0
+        justify-content: center
