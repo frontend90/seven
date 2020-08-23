@@ -1,3 +1,69 @@
+@media screen and ( max-width: 1200px )
+  .main
+    & .main-wrap 
+      flex-direction: column 
+      & .block 
+        width: 100%
+      & .left 
+        & .news-picture
+          & .content 
+            width: 100%
+            & .content-block 
+              width: calc(50% - 15px)
+            & .content-block-wrap
+              width: calc(50% - 15px)
+      & .middle 
+        margin-top: 50px 
+        & .slider-posts
+          & .posts-slider-wrap
+            & .posts-slider
+              & .slick-list 
+                & .slick-track 
+                  & .posts-slider-block
+                    text-align: center
+                    & .slider-title 
+                      & .title-wrap
+                        & .block 
+                          justify-content: center
+        & .tags
+          & .content 
+            justify-content: center
+        & .newsletter
+          & .content  
+            text-align: center
+            & form 
+              display: flex 
+              justify-content: center
+        & .video-widget
+          & .content 
+            width: 100%
+            height: 300px
+      & .right 
+        margin-top: 50px 
+        & .social-info
+          justify-content: space-around
+        & .sponsor
+          & .block 
+            width: 100%
+          & .block-wrap 
+            width: 100%
+            & .box 
+              width: calc(50% - 15px)
+        & .login
+          & .content 
+            text-align: center
+            & form 
+              display: flex 
+              flex-direction: column 
+              align-items: center
+              justify-content: center
+              & .btn 
+                & .input-check
+                  margin-left: 20px 
+        & .archive
+          & .content 
+            display: flex 
+            justify-content: center
 @media screen and ( max-width: 1150px )
   .header 
     & .header-top 
@@ -62,6 +128,30 @@
                 display: none 
             &.show 
               display: block 
+@media screen and ( max-width: 945px )
+  .footer
+    & .footer-wrap
+      flex-direction: column 
+      & .block 
+        width: 100%
+        padding: 0
+        border: none 
+        & .footer-social
+          flex-wrap: wrap
+          & a 
+            &:last-of-type
+              margin-left: 0
+      & .posts 
+        margin-top: 50px 
+      & .block-img 
+        margin-top: 50px 
+    & .footer-info-wrap
+      flex-direction: column 
+      & .block-links 
+        margin-top: 50px 
+        text-align: center
+        & a 
+          line-height: 30px 
 @media screen and ( max-width: 700px )
   .header 
     & .header-top 
@@ -97,9 +187,67 @@
             margin-top: 20px 
           & .social 
             margin-top: 20px 
+@media screen and ( max-width: 600px )
+  .main
+    & .main-wrap 
+      & .left 
+        & .latest-posts
+          & .content 
+            flex-direction: column 
+            & .content-block
+              width: 100%
+        & .carousel-posts
+          & .title 
+            &::before
+              right: 65px 
+              width: calc(100% - 185px)
 @media screen and ( max-width: 560px )
   .header 
     & .header-slider
       & .slick-dots
         padding-right: 0
         justify-content: center
+@media screen and ( max-width: 525px )
+  .main
+    & .main-wrap 
+      & .left 
+        & .news-picture
+          & .content 
+            flex-direction: column 
+            & .content-block
+              width: 100%
+            & .content-block-wrap
+              margin-top: 20px 
+              width: 100%
+        & .carousel-posts
+          & .title 
+            &::before
+              right: 115px
+              width: calc(100% - 235px)
+        & .entertainment
+          & .content 
+            flex-direction: column 
+            & .content-block
+              width: 100%
+              & .content-block-wrap
+                margin-top: 20px 
+            & .block-content 
+              height: 320px
+@media screen and ( max-width: 495px )
+  .main
+    & .main-wrap 
+      & .left 
+        & .banner
+          width: 100%
+@media screen and ( max-width: 400px )
+  .main
+    & .main-wrap 
+      & .right 
+        & .sponsor
+          & .block-wrap 
+            flex-direction: column 
+            & .box 
+              width: 100%
+              margin-bottom: 20px 
+              &:last-of-type
+                margin-bottom: 0

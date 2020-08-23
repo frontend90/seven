@@ -113,7 +113,22 @@ $('.content-slider').slick({
   autoplay: true,
   slidesToShow: 3,
   slidesToScroll: 3,
-  speed: 2000
+  speed: 2000,
+  responsive: [{
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 526,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 /************    posts-slider slick      **************/

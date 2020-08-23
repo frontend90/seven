@@ -1,0 +1,137 @@
+.footer
+  background: #2d2d2d
+  & .footer-wrap
+    display: flex 
+    justify-content: space-between
+    padding: 50px 0 40px 0 
+    & .block 
+      padding-right: 20px 
+      padding-left: 20px
+      border-right: 1px solid #414141
+      &:last-of-type
+        border: none 
+        padding-right: 0
+      &:first-of-type
+        padding-left: 0
+      & .footer-logo
+        & h3 
+          color: #ffffff
+          text-transform: uppercase
+          +russ 
+          font-weight: normal
+          font-size: 30px 
+          line-height: 1
+          & span 
+            +stale 
+            font-size: 40px 
+            color: #55b2f3
+      & p 
+        font-size: 13px 
+        color: #cacaca
+        margin-top: 10px 
+        line-height: 24px 
+      & .footer-email 
+        margin-top: 20px 
+        & a 
+          display: inline-block
+          margin-left: 20px 
+          color: #cacaca
+          &:hover
+            text-decoration: underline
+      & .footer-social
+        margin-top: 40px 
+        display: flex
+        align-items: center
+        & a 
+          margin-left: 10px 
+          &:first-of-type
+            margin-left: 0
+          & .fab, .fas 
+            +brand 
+            font-size: 16px 
+            color: #818181
+            transition: .3s linear 
+            width: 30px 
+            height: 30px 
+            border-radius: 4px 
+            display: flex
+            align-items: center
+            justify-content: center 
+            &:hover
+              background: #000000
+              color: #ffffff
+          & .fas 
+            +solid  
+      & h5 
+        color: #ffffff
+        font-size: 20px 
+        line-height: 1
+        font-weight: normal
+      & .content 
+        margin-top: 30px
+        & .block-wrap
+          display: flex 
+          margin-bottom: 20px 
+          &:last-of-type
+            margin-bottom: 0
+          & .img 
+            min-width: 80px
+            height: 80px 
+            background: #787878 
+          & .desc 
+            margin-left: 20px 
+            & p 
+              margin-top: 0
+              font-size: 14px 
+              color: #ffffff
+              letter-spacing: .28px 
+              line-height: 20px 
+            & .icon 
+              margin-top: 15px 
+              & a 
+                margin-left: 10px 
+                &:first-of-type
+                  margin-left: 0
+                & .fas 
+                  +solid 
+                  font-size: 16px 
+                  color: #b4b4b4
+      & .img-wrap 
+        display: flex 
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 10px 
+        & .img 
+          min-width: 80px 
+          height: 80px 
+          background: #e3e3e3
+          margin-top: 20px 
+    & .info 
+      width: 33%
+    & .posts 
+      width: 35%
+    & .block-img 
+      width: 30%
+  & .footer-info-wrap
+    padding: 20px 0 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid #414141
+    & .block 
+      & p 
+        font-size: 12px 
+        color: #9f9f9f
+      & a 
+        font-size: 14px 
+        color: #ffffff
+        border-right: 1px solid #414141
+        padding-left: 25px 
+        padding-right: 25px 
+        &:hover
+          text-decoration: underline
+        &:first-of-type
+          padding-left: 0
+        &:last-of-type
+          padding-right: 0
+          border: none 
