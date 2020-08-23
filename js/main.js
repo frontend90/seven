@@ -105,3 +105,48 @@ $('.header-slider').slick({
     }
   ]
 });
+
+/************    content slick      **************/
+$('.content-slider').slick({
+  arrows: false,
+  dots: true,
+  autoplay: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  speed: 2000
+});
+
+/************    posts-slider slick      **************/
+$('.posts-slider').slick({
+  prevArrow: $('.posts-slider-left'),
+  nextArrow: $('.posts-slider-right'),
+  dots: false,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 2000
+});
+
+/***********   calendar    **************************/
+$(function () {
+  $("#date").datepicker();
+});
+
+$.datepicker.regional['ru'] = {
+  closeText: 'Закрыть',
+  prevText: 'Предыдущий',
+  nextText: 'Следующий',
+  currentText: 'Сегодня',
+  monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+  monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+  dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+  dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+  dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+  weekHeader: 'Не',
+  dateFormat: 'dd.mm.yy',
+  firstDay: 1,
+  isRTL: false,
+  showMonthAfterYear: false,
+  yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);

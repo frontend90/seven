@@ -1,0 +1,963 @@
+.main
+  padding: 60px 0 
+  & .main-wrap 
+    display: flex 
+    justify-content: space-between
+    & .left 
+      width: 580px
+      & .latest-posts
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 100px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat
+          & h6 
+            +rob_bold 
+            font-size: 16px 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 0 20px 20px 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          display: flex 
+          justify-content: space-between
+          flex-wrap: wrap
+          & .content-block
+            width: calc(280px - 20px)
+            height: 240px 
+            background: linear-gradient(to bottom, #c4c4c4,#000000)
+            position: relative
+            margin-top: 20px 
+            & .number
+              position: absolute
+              top: 0
+              right: 0
+              background: #2d2d2d
+              padding: 15px
+              display: flex 
+              flex-direction: column 
+              align-items: center
+              justify-content: center
+              & p 
+                color: #ffffff
+                font-size: 25px 
+                line-height: 18px 
+              & span 
+                color: #9e9e9e
+                font-size: 11px 
+                line-height: 18px 
+                display: block 
+                margin-top: 5px 
+            & .content-title
+              position: absolute
+              left: 20px 
+              bottom: 20px 
+              right: 20px 
+              & h6 
+                color: #ffffff
+                font-size: 16px 
+                font-weight: normal
+              & .content-title-wrap
+                margin-top: 10px 
+                display: flex 
+                align-items: center
+                justify-content: space-between
+                & .box 
+                  display: flex 
+                  align-items: center
+                  & .fas 
+                    font-size: 15px 
+                    color: #b4b4b4
+                    +solid 
+                  & p 
+                    margin-left: 10px
+                    color: #b3b3b3
+                    font-size: 10px 
+                  & a 
+                    margin-left: 10px 
+                    &:first-of-type
+                      margin-left: 0
+                    & .fas 
+                      font-size: 12px 
+      & .news-picture
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 120px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content
+          margin-top: 10px
+          padding: 20px  
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          display: flex 
+          justify-content: space-between
+          flex-wrap: wrap
+          & .content-block
+            width: 260px 
+            height: 240px
+            background: #c3c3c3
+          & .content-block-wrap
+            display: flex 
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 260px
+            & .box 
+              width: calc(33.3% - 10px) 
+              height: 70px  
+              background: #c3c3c3
+              margin-bottom: 15px 
+      & .carousel-posts
+        margin-top: 40px 
+        position: relative
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 40px 
+            width: calc(100% - 160px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content-slider
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & .slick-list 
+            overflow: hidden
+            & .slick-track 
+              display: flex 
+              & .content-slider-block
+                & .img 
+                  background: #c4c4c4
+                  width: 165px 
+                  height: 115px 
+                & h6 
+                  margin-top: 15px
+                  font-size: 16px
+                & p 
+                  margin-top: 10px
+                  color: #b3b3b3
+                  font-size: 10px 
+                  & .fas 
+                    +solid 
+                    font-size: 12px 
+                    color: #b4b4b4
+                    margin-right: 10px 
+          & .slick-dots
+            display: flex 
+            align-items: center
+            position: absolute
+            top: -5px
+            right: 0
+            & li
+              list-style: none 
+              margin-left: 5px 
+              &:first-of-type
+                margin-left: 0
+              & button 
+                font-size: 0
+                width: 7px 
+                height: 7px 
+                background: #d4d4d4
+                border-radius: 50%
+            & .slick-active 
+              & button
+                background: #2d2d2d 
+      & .entertainment
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 110px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat
+          & h6 
+            font-size: 16px 
+            line-height: 1
+            +rob_bold 
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          display: flex 
+          justify-content: space-between
+          & .content-block
+            width: calc(50% - 10px)
+            & .content-block-wrap
+              display: flex 
+              margin-bottom: 10px
+              padding-bottom: 10px 
+              border-bottom: 1px solid #f1f1f1
+              &:last-of-type
+                margin-bottom: 0 
+                padding-bottom: 0
+                border-bottom: none 
+              & .img 
+                background: #787878
+                min-width: 75px 
+                height: 75px 
+              & .desc 
+                margin-left: 20px 
+                & h6 
+                  font-size: 14px 
+                  letter-spacing: .28px
+                  line-height: 20px 
+                  font-weight: normal
+                & .icon 
+                  margin-top: 10px 
+                  & a 
+                    margin-left: 10px 
+                    &:first-of-type
+                      margin-left: 0
+                    & .fas 
+                      +solid 
+                      font-size: 12px 
+                      color: #b4b4b4 
+          & .block-content 
+            background: linear-gradient(to bottom, #c4c4c4,#000000)
+            position: relative
+            height: 
+            & .number 
+              position: absolute
+              top: 0
+              right: 0
+              background: #2d2d2d
+              padding: 15px
+              display: flex 
+              flex-direction: column 
+              align-items: center
+              justify-content: center
+              & p 
+                color: #ffffff
+                font-size: 25px 
+                line-height: 18px 
+              & span 
+                color: #9e9e9e
+                font-size: 11px 
+                line-height: 18px 
+                display: block 
+                margin-top: 5px 
+            & .content-title
+              position: absolute
+              bottom: 20px 
+              left: 20px 
+              right: 20px 
+              & h6 
+                color: #ffffff
+                font-size: 16px 
+                font-weight: normal
+              & .content-title-wrap
+                display: flex 
+                align-items: center
+                justify-content: space-between
+                margin-top: 15px 
+                & .box 
+                  display: flex 
+                  align-items: center
+                  & .fas 
+                    +solid 
+                    font-size: 15px 
+                    color: #b4b4b4
+                  & p 
+                    font-size: 10px 
+                    color: #b3b3b3
+                    margin-left: 10px 
+                  & a 
+                    margin-left: 10px 
+                    &:first-of-type
+                      margin-left: 0
+                    & .fas 
+                      font-size: 12px 
+      & .banner
+        margin: 40px auto 0  
+        background: #F3F3F3
+        width: 465px 
+        height: 65px 
+        display: flex 
+        align-items: center
+        justify-content: center
+        border: 3px solid #C8C8C8
+        border-radius: 3px 
+        & span 
+          color: #C2C2C2
+          font-size: 20px 
+    & .middle 
+      width: 280px
+      & .popular-posts
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 110px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & .content-block
+            display: flex 
+            margin-bottom: 10px 
+            padding-bottom: 10px 
+            border-bottom: 1px solid #f1f1f1
+            &:last-of-type
+              margin-bottom: 0
+              padding-bottom: 0
+              border-bottom: none 
+            & .img 
+              background: #787878
+              min-width: 65px 
+              height: 65px 
+            & .desc 
+              margin-left: 20px 
+              & h6
+                font-size: 14px 
+                letter-spacing: .28px 
+                font-weight: normal
+                line-height: 20px 
+              & .icon 
+                margin-top: 10px 
+                & a 
+                  margin-left: 10px 
+                  &:first-of-type
+                    margin-left: 0
+                  & .fas 
+                    +solid 
+                    font-size: 12px 
+                    color: #b4b4b4
+      & .poll
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 40px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & h6 
+            font-size: 16px 
+            color: #131313
+            letter-spacing: .32px 
+            line-height: 1
+          & form 
+            width: 100%
+            margin-top: 20px 
+            & .input 
+              display: flex 
+              align-items: center
+              margin-bottom: 10px 
+              & input[type="radio"]
+                &:checked, &:not(:checked)
+                  position: absolute
+                  left: -9999px
+                &:checked + label, &:not(:checked) + label 
+                  position: relative
+                  display: inline-block
+                  padding-left: 22px 
+                  cursor: pointer
+                  line-height: 20px 
+                  &::before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 12px 
+                    height: 12px 
+                    border: 1px solid #616161
+                    border-radius: 50%
+                  &::after
+                    content: ''
+                    position: absolute
+                    left: 0 
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 12px 
+                    height: 12px 
+                    background: #55b2f3
+                    border-radius: 50%
+                    transition: .3s linear 
+                &:not(:checked) + label 
+                  &::after
+                    opacity: 0
+                &:checked + label 
+                  color: #55b2f3
+                  &::after
+                    opacity: 1
+                  &::before
+                    border: none 
+            & .btn 
+              margin-top: 10px
+              display: inline-flex
+              & button 
+                background: #2d2d2d
+                color: #fefefe
+                padding: 10px 20px 
+                font-size: 15px 
+                letter-spacing: .3px 
+                transition: .3s linear 
+                margin-left: 10px 
+                &:first-of-type
+                  margin-left: 0
+                &:hover
+                  background: #55b2f3
+      & .slider-posts
+        margin-top: 40px 
+        position: relative
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 30px 
+            width: calc(100% - 125px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .posts-slider-wrap 
+          & .posts-slider
+            margin-top: 10px 
+            padding: 20px 
+            border: 1px solid #e3e3e3
+            border-top: 2px solid #2d2d2d
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+            width: 100%
+            & .slick-list 
+              overflow: hidden
+              height: 240px 
+              & .slick-track 
+                display: flex 
+                & .posts-slider-block
+                  position: relative
+                  width: 245px 
+                  height: 240px 
+                  background: linear-gradient(to bottom, #c4c4c4,#000000)
+                  & .slider-title 
+                    position: absolute
+                    left: 20px 
+                    bottom: 20px 
+                    right: 20px 
+                    & h6 
+                      color: #ffffff
+                      font-size: 16px 
+                      font-weight: normal
+                    & .title-wrap
+                      display: flex 
+                      align-items: center
+                      justify-content: space-between
+                      margin-top: 10px 
+                      & .block 
+                        display: flex 
+                        align-items: center
+                        & .fas 
+                          +solid 
+                          font-size: 15px 
+                          color: #b4b4b4
+                        & p 
+                          margin-left: 10px 
+                          font-size: 10px 
+                          color: #b3b3b3
+                        & a 
+                          margin-left: 10px 
+                          &:first-of-type
+                            margin-left: 0
+                          & .fas 
+                            font-size: 12px 
+          & .slider-btn
+            position: absolute
+            top: 2px 
+            right: 0  
+            & button 
+              & .fas 
+                +solid 
+                font-size: 20px 
+                color: #8c8c8c
+      & .tags 
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0 
+            width: calc(100% - 45px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          display: flex 
+          flex-wrap: wrap
+          & a 
+            background: #2c2c2c
+            border-radius: 2px 
+            padding: 10px 15px 
+            color: #ffffff
+            font-size: 12px 
+            margin: 2px 
+            transition: .3s linear 
+            &:hover
+              background: #55b2f3
+      & .newsletter
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0 
+            width: calc(100% - 90px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & p 
+            font-size: 13px 
+            color: #6f6f6f
+          & form 
+            margin-top: 15px 
+            width: 100%
+            & .input 
+              position: relative
+              width: 240px 
+              height: 40px 
+              & input 
+                border: 1px solid #e5e5e5
+                width: 100%
+                height: 100%
+                background: #f8f8f8
+                padding-left: 15px
+                padding-right: 40px 
+                color: #afafaf
+                +rob_ital
+                font-size: 11px 
+                &::placeholder 
+                  color: #afafaf 
+              & .fas 
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 15px 
+                +solid 
+                color: #8b8b8b
+                font-size: 16px
+      & .video-widget
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0 
+            width: calc(100% - 105px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          width: 280px 
+          height: 220px
+          & iframe 
+            width: 100%
+            height: 100%
+    & .right 
+      width: 280px 
+      & .social-info
+        display: flex 
+        justify-content: space-between
+        text-align: center
+        & a 
+          width: 90px 
+          padding-top: 15px 
+          padding-bottom: 10px
+          & .fab, .fas  
+            +brand 
+            color: #ffffff
+            font-size: 20px
+            margin: auto
+            display: flex 
+            align-items: center
+            justify-content: center
+          & .fas 
+            +solid  
+          & .info 
+            margin-top: 10px 
+            & p 
+              color: #ffffff
+              font-size: 12px 
+        & .facebook
+          background: #415C92
+          & .fab 
+            background: #2c5182
+            border-radius: 50%
+            width: 40px 
+            height: 40px 
+        & .twitter 
+          background: #7DC0E8
+          & .fab 
+            background: #3bafda
+            border-radius: 50%
+            width: 40px 
+            height: 40px 
+        & .rss
+          background: #DE863A
+          & .fas 
+            background: #e27a2f
+            border-radius: 50%
+            width: 40px 
+            height: 40px 
+      & .sponsor
+        margin-top: 40px 
+        border: 1px solid #eaeaea
+        position: relative
+        padding: 15px 10px 10px 10px  
+        & span 
+          display: inline-block 
+          text-transform: uppercase
+          +rob_light 
+          color: #bcbcbc
+          font-size: 11px 
+          position: absolute
+          top: -7px
+          left: 25px
+          background: #ffffff
+          padding: 0 5px 
+        & .block 
+          background: #F8F8F8
+          width: 260px 
+          height: 125px 
+          display: flex 
+          align-items: center
+          justify-content: center
+          flex-direction: column 
+          & p 
+            +rob_light 
+            color: #c2c2c2
+        & .block-wrap
+          display: flex 
+          justify-content: space-between
+          margin-top: 10px 
+          & .box 
+            background: #f8f8f8
+            width: 125px 
+            height: 125px 
+            display: flex 
+            align-items: center
+            justify-content: center
+            flex-direction: column 
+            & p 
+              color: #c2c2c2
+              +rob_light 
+      & .login
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 50px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & form 
+            width: 100%
+            & .input 
+              width: 240px 
+              height: 40px 
+              margin-bottom: 10px 
+              & input 
+                border: 1px solid #e5e5e5
+                background: #f8f8f8
+                width: 100%
+                height: 100%
+                +rob_light 
+                color: #838383
+                font-size: 13px 
+                padding-left: 15px 
+                &::placeholder 
+                  color: #838383
+            & .btn 
+              margin-top: 20px 
+              display: flex 
+              align-items: center
+              justify-content: space-between
+              & button 
+                width: 80px 
+                height: 30px 
+                background: #2d2d2d
+                color: #ffffff
+                font-size: 15px 
+                letter-spacing: .3px 
+                transition: .3s linear 
+                &:hover
+                  background: #55b2f3
+              & .input-check
+                display: inline-flex
+                align-items: center
+                & label 
+                  font-size: 12px 
+                  color: #9f9f9f
+                  margin-left: 5px 
+                  letter-spacing: .24px 
+            & a 
+              display: inline-block
+              margin-top: 15px 
+              font-size: 12px 
+              color: #636363
+              letter-spacing: .24px 
+      & .archive
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 65px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & #date 
+            & .ui-widget
+              border: none 
+              border-radius: 0
+              background: #ffffff
+              color: #858585
+              padding: 0
+              width: 240px 
+              +rob_reg 
+            & .ui-datepicker .ui-datepicker-header
+              padding: 5px 0 
+              border-radius: 0
+              border: none 
+              background: #2d2d2d
+              color: #ffffff
+              +rob_med 
+              font-size: 13px 
+              letter-spacing: .26px 
+              font-weight: normal
+            & .ui-datepicker table
+              margin: 0
+            & .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+              opacity: 1
+              background-color: #f6f6f6
+            & .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+              background: #f1f1f1
+              border: none 
+              color: #2d2d2d
+            & .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+              background: #2d2d2d
+              color: #ffffff
+              border: none 
+            & .ui-datepicker td span, .ui-datepicker td a
+              text-align: center
+              padding: 5px 
+            & .ui-button.ui-state-disabled:hover, .ui-button.ui-state-disabled:active
+              background: red   
+            & .ui-datepicker .ui-datepicker-prev
+              top: 50%
+              transform: translateY(-50%)
+              left: 10px 
+            & .ui-datepicker .ui-datepicker-next 
+              top: 50%
+              transform: translateY(-50%)
+              right: 0
+            & .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span
+              top: 50%
+              transform: translateY(-50%) 
+              margin: 0       
+              left: 0
+            & .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+              background: #2d2d2d
+              color: #ffffff
+            & .ui-state-default.ui-state-active
+              background: #2d2d2d
+              color: #ffffff
+            & .ui-datepicker-prev-hover, .ui-datepicker-next-hover
+              border: none 
+      & .recent 
+        margin-top: 40px 
+        & .title 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+            width: calc(100% - 140px)
+            height: 15px
+            background: url(../img/main/bg.png) repeat 
+          & h6 
+            font-size: 16px 
+            +rob_bold 
+            line-height: 1
+            display: inline-block
+        & .content 
+          margin-top: 10px 
+          padding: 20px 
+          border: 1px solid #e3e3e3
+          border-top: 2px solid #2d2d2d
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15)
+          & .content-block-wrap
+            display: flex 
+            padding-bottom: 10px 
+            margin-bottom: 10px 
+            border-bottom: 1px solid #f1f1f1
+            &:last-of-type
+              margin-bottom: 0
+              padding-bottom: 0
+              border: none 
+            & .img 
+              background: #d8d8d8
+              min-width: 70px 
+              height: 70px 
+            & .block 
+              margin-left: 20px 
+              & h6 
+                +rob_bold 
+                color: #383d40
+                font-size: 14px 
+                letter-spacing: .28px 
+                line-height: 1
+              & p 
+                margin-top: 5px 
+                +rob_light 
+                color: #383d40
+                font-size: 12px 
+                letter-spacing: .24px 
+              & span 
+                +rob_thin 
+                color: #a3abaf
+                font-size: 12px 
+
+
+
